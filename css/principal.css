@@ -1,0 +1,386 @@
+/* webfonts */
+
+@font-face {
+    font-family: "Helvetica-Light";
+    src: url("/fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica-Neue";
+    src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica-Neue";
+    src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica-Medium";
+    src: url("../fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Condensed";
+    src: url("../fonts/HelveticaNeue-Condensed.woff2") format("woff2"), url("../fonts/HelveticaNeue-Condensed.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HelveticaNeue-BdCon";
+    src: url("../fonts/HelveticaNeue-BdCn.woff2") format("woff2"), url("../fonts/HelveticaNeue-BdCn.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HelveticaNeue-MdCon";
+    src: url("../fonts/HelveticaNeue-MdCn.woff2") format("woff2"), url("../fonts/HelveticaNeue-MdCn.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+}
+
+:root {
+    --color-encabezadoTop: #626262;
+    --color-text-primarynav: #ffffff;
+    --color-texto-contenido: #001719;
+    --color-texto-encabezado: #2a2a2a;
+    --color-texto-pie: #016971;
+    --color-textSec-pie: #8dcbcf;
+
+}
+
+body {
+    font-size: 16px;
+    text-rendering: auto;
+    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale;
+    /* Firefox */
+    font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Main content */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* comienza header */
+.enlace-sdi span,
+.redes-sociales span {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.redes-sociales a {
+    text-decoration: none;
+    color: var(--color-encabezadoTop);
+}
+
+.redes-sociales a:nth-last-child(-n+2) {
+    padding-left: 20px;
+}
+.redes-sociales a:nth-child(7) {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.encabezado-top {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 8px 50px;
+    background-color: #E0E0E0;
+    flex-wrap: wrap;
+}
+.logoUNAM img {
+    height: 80px;
+
+}
+.encabezado-bottom {
+    background-color: #157D8F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logoCOUS img {
+    max-width: 100%;
+    height: 80px;
+}
+
+.logos {
+    background-color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logoUNAM {
+    margin-right: 40px;
+}
+.contenido-pie .redes-sociales a:hover,
+.redes-sociales a:hover {
+    color: #157D8F;
+    transition: all 0.2s ease;
+}
+.redes-sociales a > i {
+    margin: 10px;
+}
+
+.encabezado-bottom .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #bfc1bf;
+    margin: 0;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.encabezado-bottom .menu li {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.encabezado-bottom .menu li a {
+    text-decoration: none;
+    color: var(--color-texto-encabezado);
+}
+
+/* menú navegación */
+
+.primary-navigation {
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.dropdown::before {
+    content: "";
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    top: -30px;
+}
+nav.primary-navigation ul li {
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.primary-navigation a:nth-child(2) {
+    padding: 0 60px;
+    color: var(--color-text-primarynav);
+}
+
+nav.primary-navigation :first-child ul li a {
+    color: #000000;
+    white-space: nowrap;
+}
+nav.primary-navigation li a {
+    color: var(--color-text-primarynav);
+}
+nav.primary-navigation li a:hover {
+    color: #B7003F;
+}
+
+nav.primary-navigation li .item:hover {
+    color: white;
+}
+nav.primary-navigation li:hover {
+    cursor: pointer;
+}
+nav.primary-navigation ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: white;
+}
+nav.primary-navigation ul li ul:hover,
+nav.primary-navigation ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    box-shadow: 1px 1px 11px -3px #a4a4a4;
+    padding-top: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+nav.primary-navigation ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+    border-style: none;
+}
+nav.primary-navigation ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 7px solid #B7003F;
+    transition: all 0.2s ease;
+    color: #B7003F;
+}
+a {
+    text-decoration: none;
+}
+ul li ul li a {
+    transition: all 0.5s ease;
+}
+
+/* footer */
+
+.contenido-pie {
+    background-color: #E5FFFC;
+    color: var(--color-texto-pie);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.pie-top {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.enlaces ul li {
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.enlaces ul li a{
+    color:var(--color-texto-pie);
+}
+.enlaces ul {
+	padding: 0;
+	margin: 0;
+}
+.pie-middle {
+	padding: 20px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid var(--color-texto-pie);
+}
+
+.container__form .form__field {
+	padding: 10px;
+	min-width: 220px;
+	border: 1px solid var(--color-texto-pie);
+}
+.container__form button {
+	height: 100%;
+	color: white;
+	background-color: #416788;
+	padding: 10px;
+	margin-left: -5px;
+	border: 1px solid #416788;
+}
+.container__form p{
+    text-transform: uppercase;
+}
+
+.leyenda {
+	display: flex;
+	flex: 1;
+	background: #00949F;
+	align-items: center;
+	padding: 20px;
+	min-width: 40%;
+	font-size: 0.8em;
+	color: #ffffff;
+	width: 100%;
+	justify-content: center;
+}
+.leyenda p {
+
+    max-width: 1200px;
+}
+
+.contenido-pie .redes-sociales a {
+    color: var(--color-texto-pie);
+}
+.enlace-sdi img {
+    height: 50px;
+}
+/* Responsive */
+
+@media only screen and (max-width: 540px) {
+
+    .encabezado-top {
+        padding: 10px 0;
+    }
+    .redes-sociales {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .redes-sociales {
+        margin: 5px auto;
+    }
+
+}
+@media only screen and (max-width: 350px) {
+
+    .zona-creditos span a {
+        margin: 0;
+    }
+}
