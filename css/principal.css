@@ -1,72 +1,113 @@
 /* webfonts */
 
 @font-face {
-    font-family: "Helvetica-Light";
-    src: url("/fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
-    font-weight: 300;
+    font-family: 'latobold';
+    src: url("../fonts/lato-bold-webfont.woff2") format('woff2'), url("../fonts/lato-bold-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: normal;
     unicode-range: U+0020-00FE;
     font-display: swap;
+
 }
 
 @font-face {
-    font-family: "Helvetica-Neue";
-    src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
-    font-weight: 400;
+    font-family: 'latobold_italic';
+    src: url("../fonts/lato-bolditalic-webfont.woff2") format('woff2'), url("../fonts/lato-bolditalic-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: normal;
     unicode-range: U+0020-00FE;
     font-display: swap;
+
 }
 
 @font-face {
-    font-family: "Helvetica-Neue";
-    src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: bold;
-    font-stretch: normal;
+    font-family: 'latoheavy';
+    src: url("../fonts/lato-heavy-webfont.woff2") format('woff2'), url("../fonts/lato-heavy-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
     unicode-range: U+0020-00FE;
     font-display: swap;
+
 }
 
 @font-face {
-    font-family: "Helvetica-Medium";
-    src: url("../fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue-Medium.woff") format("woff");
-    font-weight: 500;
+    font-family: 'latolight';
+    src: url("../fonts/lato-light-webfont.woff2") format('woff2'), url("../fonts/lato-light-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: normal;
     unicode-range: U+0020-00FE;
+    font-display: swap;
+
 }
 
 @font-face {
-    font-family: "HelveticaNeue-Condensed";
-    src: url("../fonts/HelveticaNeue-Condensed.woff2") format("woff2"), url("../fonts/HelveticaNeue-Condensed.woff") format("woff");
-    font-weight: 400;
+    font-family: 'latomedium';
+    src: url("../fonts/lato-medium-webfont.woff2") format('woff2'), url("../fonts/lato-medium-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: condensed;
     unicode-range: U+0020-00FE;
     font-display: swap;
+
 }
 
 @font-face {
-    font-family: "HelveticaNeue-BdCon";
-    src: url("../fonts/HelveticaNeue-BdCn.woff2") format("woff2"), url("../fonts/HelveticaNeue-BdCn.woff") format("woff");
-    font-weight: 400;
+    font-family: 'latoregular';
+    src: url("../fonts/lato-regular-webfont.woff2") format('woff2'), url("../fonts/lato-regular-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: condensed;
     unicode-range: U+0020-00FE;
     font-display: swap;
+
 }
 
 @font-face {
-    font-family: "HelveticaNeue-MdCon";
-    src: url("../fonts/HelveticaNeue-MdCn.woff2") format("woff2"), url("../fonts/HelveticaNeue-MdCn.woff") format("woff");
-    font-weight: 400;
+    font-family: 'latobold';
+    src: url("../fonts/lato-bold-webfont.woff2") format('woff2'), url("../fonts/lato-bold-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: condensed;
     unicode-range: U+0020-00FE;
     font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'latobold_italic';
+    src: url("../fonts/lato-bolditalic-webfont.woff2") format('woff2'), url("../fonts/lato-bolditalic-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'latoheavy';
+    src: url("../fonts/lato-heavy-webfont.woff2") format('woff2'), url("../fonts/lato-heavy-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url("../fonts/lato-light-webfont.woff2") format('woff2'), url("../fonts/lato-light-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'latomedium';
+    src: url("../fonts/lato-medium-webfont.woff2") format('woff2'), url("../fonts/lato-medium-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-00FE;
+    font-display: swap;
+
 }
 
 :root {
@@ -76,7 +117,24 @@
     --color-texto-encabezado: #2a2a2a;
     --color-texto-pie: #016971;
     --color-textSec-pie: #8dcbcf;
+    --color-titulos-pagina: #002E33;
+    --color-titulo-colaborador: #009CAD;
+    --color-subtitulos-gral: #535353;
+    --font-titulos-pagina: "latobold", Arial, Helvetica, sans-serif;
+    --font-titulos-blog-main: "latomedium", Arial, Helvetica, sans-serif;
+    --color-body: #F5FFFF;
+    --color-texto-verde: #006972;
+    --color-naranja: #DE761A;
+    --color-texto-gral: #1F1F1F;
+    --color-menu-secundario: #DDFCFC;
+    --color-bloq: #E2FEFF;
+    --color-verde:#84CC15;
 
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -89,8 +147,10 @@ body {
     /* Chrome, Safari */
     -moz-osx-font-smoothing: grayscale;
     /* Firefox */
-    font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
+    font-family: "latoregular", Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: var(--color-body);
+    color: var(--color-texto-gral);
 }
 
 /* Main content */
@@ -99,11 +159,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
     background-color: #ffffff;
 }
 
 /* comienza header */
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+
 .enlace-sdi span,
 .redes-sociales span {
     position: absolute;
@@ -126,7 +192,7 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 8px 50px;
+    padding: 0 50px;
     background-color: #E0E0E0;
     flex-wrap: wrap;
 }
@@ -275,7 +341,229 @@ ul li ul li a {
     transition: all 0.5s ease;
 }
 
+/* PUBLICACIONES */
+.container-publicaciones {
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+.container-publicaciones img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.lista-item {
+    display: flex;
+    width: 100%;
+}
+
+.lista-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: 100%;
+}
+.lista-content p {
+    flex: 1 0 auto;
+}
+
+/* Qué es la COUS */
+
+.contendedor-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contendedor-secundario h1 {
+    color: var(--color-texto-verde);
+    margin: 50px 0 auto;
+    text-align: center;
+}
+
+.menu-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DDFCFC;
+    width: 100%;
+}
+
+.menu-secundario ul {
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    border-top: 2px solid var(--color-naranja);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu-secundario ul li {
+    margin: 20px;
+    list-style: none;
+}
+.menu-secundario ul li a {
+    color: var(--color-texto-verde);
+    padding: 5px 20px;
+
+}
+
+.menu-secundario ul li a:hover {
+    background-color: var(--color-texto-verde);
+    color: var(--color-text-primarynav);
+    padding: 5px 20px;
+    border-radius: 30px;
+
+}
+
+.contenedor-info {
+	display: flex;
+	max-width: 1200px;
+	padding: 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor-info .info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contenedor-info h2 {
+    color: var(--color-texto-contenido);
+    margin: 0;
+}
+
+.contenedor-info img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.contenedor-info.us h2 {
+	font-size: 3em;
+    font-family: 'latobold', Arial, Helvetica, sans-serif;
+}
+
+/* programa de trabajo */
+
+.contenedor-info.programa-trabajo {
+	flex-direction: column;
+	width: 100%;
+	padding: 0;
+	max-width: 100%;
+}
+
+.info.pt h2,
+.info.pt h3 {
+    text-align: center;
+}
+
+.programa-trabajo .info {
+    padding: 0;
+}
+
+.bloq-info {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloq-info p {
+	max-width: 800px;
+}
+
+.bloq {
+	padding: 40px;
+}
+
+.bloq2 img {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.bloq2 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.bloq1, .bloq3 {
+    background-color: var(--color-bloq);
+    width: 100%;
+}
+
+.card-list, .card-list2 {
+	display: flex;
+	max-width: 1200px;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card {
+	padding: 20px;
+	background-color: var(--color-body);
+	margin: 80px 20px;
+	width: 28.3%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	min-width: 220px;
+	border-radius: 0 0 10px 10px;
+}
+.card-list2 .card {
+	width: 28.3%;
+	min-width: 350px;
+}
+
+.card-titulo {
+	position: absolute;
+	top: -24px;
+	background-color: #00BEBE;
+	color: white;
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: center;
+	left: 0;
+	right: 0;
+	width: 90%;
+	margin: auto;
+}
+
+.btn-descarga{
+        background:var(--color-texto-verde);
+        padding: 10px;
+        border-radius: 30px;
+        color: var(--color-text-primarynav);
+        font-weight: bold;
+        margin: 20px;
+}
+
 /* footer */
+.number {
+    position: absolute;
+    top: -96px;
+    height: 90px;
+    width: 90px;
+    background-color: var(--color-naranja);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 180px;
+    font-size: 2em;
+    color: white;
+    font-family: "latoheavy",Arial, Helvetica, sans-serif;
+}
 
 .contenido-pie {
     background-color: #E5FFFC;
@@ -290,12 +578,12 @@ ul li ul li a {
 }
 
 .pie-top {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .enlaces ul li {
@@ -306,49 +594,49 @@ ul li ul li a {
     text-transform: uppercase;
 }
 
-.enlaces ul li a{
-    color:var(--color-texto-pie);
+.enlaces ul li a {
+    color: var(--color-texto-pie);
 }
 .enlaces ul {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 .pie-middle {
-	padding: 20px 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	border-top: 1px solid var(--color-texto-pie);
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--color-texto-pie);
 }
 
 .container__form .form__field {
-	padding: 10px;
-	min-width: 220px;
-	border: 1px solid var(--color-texto-pie);
+    padding: 10px;
+    min-width: 220px;
+    border: 1px solid var(--color-texto-pie);
 }
 .container__form button {
-	height: 100%;
-	color: white;
-	background-color: #416788;
-	padding: 10px;
-	margin-left: -5px;
-	border: 1px solid #416788;
+    height: 100%;
+    color: white;
+    background-color: #416788;
+    padding: 10px;
+    margin-left: -5px;
+    border: 1px solid #416788;
 }
-.container__form p{
+.container__form p {
     text-transform: uppercase;
 }
 
 .leyenda {
-	display: flex;
-	flex: 1;
-	background: #00949F;
-	align-items: center;
-	padding: 20px;
-	min-width: 40%;
-	font-size: 0.8em;
-	color: #ffffff;
-	width: 100%;
-	justify-content: center;
+    display: flex;
+    flex: 1;
+    background: #00949F;
+    align-items: center;
+    padding: 20px;
+    min-width: 40%;
+    font-size: 0.8em;
+    color: #ffffff;
+    width: 100%;
+    justify-content: center;
 }
 .leyenda p {
 
@@ -361,6 +649,108 @@ ul li ul li a {
 .enlace-sdi img {
     height: 50px;
 }
+
+/* MARCO NORMATIVO */
+
+.contenedor-info.marco-normativo {
+	max-width: 100%;
+	padding: 0;
+}
+
+.marco-normativo .bloq.bloq1 {
+	background-color: var(--color-titulo-colaborador);
+}
+.marco-normativo h1 {
+	margin-bottom: 30px;
+}
+
+
+.marco-normativo h2 {
+	text-align: center;
+    color: var(--color-menu-secundario);
+}
+
+.marco-normativo article:nth-child(3) h2 {
+	text-align: center;
+	color:var(--color-texto-verde);
+}
+
+.marco-normativo .bloq-info.inter a{
+    color: var(--color-bloq);
+}
+
+.ambito {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.marco-normativo .bloq-info {
+	flex-basis: 40%;
+	background-color: var(--color-menu-secundario);
+	padding: 40px;
+	display: flex;
+	align-items: flex-start;
+	margin: 20px;
+    border-bottom: 10px solid var(--color-verde)
+}
+
+.marco-normativo .bloq-info.inter {
+	background-color: var(--color-titulo-colaborador);
+    color: var(--color-menu-secundario);
+    border-bottom: 10px solid var(--color-naranja);
+}
+
+
+/* FUNCIONES */
+
+.bloq1.funcion1 h2 {
+	border-bottom: 5px solid var(--color-naranja);
+}
+
+.bloq1.funcion2 h2 {
+	border-bottom: 5px solid var(--color-titulo-colaborador);
+}
+.bloq1.funcion3 h2 {
+	border-bottom: 5px solid var(--color-verde);
+}
+.funciones .contendedor-secundario .contenedor-info {
+	max-width: 100%;
+}
+
+.funciones .contendedor-secundario .bloq1, .bloq3 {
+	background-color: var(--color-text-primarynav);
+	width: 100%;
+	margin-top: 60px;
+}
+
+  .funciones .contenedor-info h2 {
+	color: var(--color-texto-contenido);
+	margin: auto;
+	text-align: center;
+	width: 500px;
+}
+
+.funciones .bloques {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 40px;
+}
+
+.funciones .bloq-info {
+	flex-basis: 29%;
+	padding: 40px;
+	margin: 30px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+
+h1{
+    font-size: 2em;
+}
+
+
 /* Responsive */
 
 @media only screen and (max-width: 540px) {
@@ -378,9 +768,21 @@ ul li ul li a {
     }
 
 }
-@media only screen and (max-width: 350px) {
+/* @media only screen and (max-width: 350px) {
 
     .zona-creditos span a {
         margin: 0;
+    }
+}
+
+@media all and (min-width: 40em) {
+    .lista-item {
+        width: 50%;
+    }
+}
+*/
+@media all and (min-width: 60em) {
+    .lista-item {
+        width: 33.33%;
     }
 }
