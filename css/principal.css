@@ -383,17 +383,18 @@ ul li ul li a {
 }
 
 .contendedor-secundario h1 {
-    color: var(--color-texto-verde);
-    margin: 50px 0 auto;
-    text-align: center;
+	color: var(--color-texto-verde);
+	margin: 50px auto 50px;
+	text-align: center;
 }
 
 .menu-secundario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #DDFCFC;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #DDFCFC;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .menu-secundario ul {
@@ -721,7 +722,6 @@ ul li ul li a {
 .funciones .contendedor-secundario .bloq1, .bloq3 {
 	background-color: var(--color-text-primarynav);
 	width: 100%;
-	margin-top: 60px;
 }
 
   .funciones .contenedor-info h2 {
@@ -750,6 +750,106 @@ h1{
     font-size: 2em;
 }
 
+
+/* A QUE NOS REFERIMOS */
+
+
+.parrafo-izq {
+	display: flex;
+	max-width: 1200px;
+	flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.parra-info {
+	flex: 1 50%;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.img-info {
+	max-width: 500px;
+	display: flex;
+	align-items: center;
+}
+.parrafo-der {
+	display: flex;
+	margin: 20px;
+    max-width: 1200px;
+}
+.referimos h2 {
+	color: var(--color-texto-verde);
+	margin: 50px auto 50px;
+	text-align: center;
+}
+
+
+/* TAREAS SUTANTIVAS */
+
+.tareas-sustantivas .contenedor-info {
+	flex-direction: column;
+}
+
+.tareas-sustantivas img{
+    margin: 20px 0;
+}
+
+.tareas-sustantivas .bloq-info {
+	flex-basis: 40%;
+	padding: 40px;
+	margin: 30px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.tareas-sustantivas .bloques {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.tareas-sustantivas .contendedor-secundario {
+	max-width: 800px;
+	margin: auto;
+}
+
+
+/* grandes problemas */
+.grandes-problemas .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "menu-activades header-actvidades header-actvidades "
+      "menu-activades contenido-actividades contenido-actividades"
+      "menu-activades contenido-actividades contenido-actividades";
+    width: 100%;
+  }
+  
+  .menu-activades { 
+    grid-area: menu-activades;
+    background-color:var(--color-titulo-colaborador); 
+    color: var(--color-text-primarynav);
+}
+  
+.header-actvidades {
+	grid-area: header-actvidades;
+	background-color: var(--color-titulo-colaborador);
+	color: var(--color-text-primarynav);
+	text-align: center;
+	text-transform: uppercase;
+}
+  
+  .contenido-actividades { grid-area: contenido-actividades; }
+  
+  .grandes-problemas .contenedor-info {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+}
 
 /* Responsive */
 
